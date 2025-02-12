@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEEP: Pomodoro Timer for Deep Work</title>
+    <link rel ="stylesheet" href="DEEP2.css">
+</head>
+<body>
+    <div class="planet planet1"></div>
+    <div class="planet planet2"></div>
+    
+    <div class="container">
+        <h1>  Go Deep. Stay Focused.</h1>
+        <div id="timeSelection">
+            <label for="time">Select Time:</label>
+            <select id="time" onchange="setTime()">
+                <option value="1500">25 minutes</option>
+                <option value="2700">45 minutes</option>
+                <option value="3600">1 hour</option>
+            </select>
+        </div>
+        <div id="timer">25:00</div>
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+        
+        <div id="musicControls">
+            <label for="music">Music:</label>
+            <select id="music" onchange="playMusic()">
+                <option value="">None</option>
+                <option value="binaural">Binaural Beats</option>
+                <option value="classical">Classical Music</option>
+                <option value="lofi">Lofi</option>
+                <option value="rain">Rain Sounds</option>
+            </select>
+        </div>
+    </div>
+    
+    <audio id="audioPlayer" loop></audio>
+
+    <script src="DEEP2.js"></script>
+</body>
+</html>
