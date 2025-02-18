@@ -81,4 +81,14 @@
       background-color: black;
       color: white;
        }
+       @keyframes twinkle {
+      0% { opacity: 0.5; }
+     50% { opacity: 1; }
+     100% { opacity: 0.5; }
+     }
+
+     .stars {
+      animation: twinkle 5s infinite;
+     }
+
 
